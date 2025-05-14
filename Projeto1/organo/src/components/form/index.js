@@ -4,7 +4,7 @@ import SuspendedList from "../SupendedList";
 import TextField from "../TextField";
 import "./Form.css";
 
-const Formulario = () => {
+const Formulario = (props) => {
     const times = ["Diretoria", "Infra", "Back-end", "Front-end", "UX/UI", "Business"];
 
     const [nome, setNome] = useState("");
@@ -14,7 +14,12 @@ const Formulario = () => {
 
     const onSave = (event) => {
         event.preventDefault();
-        console.log("Formulario foi enviado", nome, cargo, imagem, time);
+        props.onMemberRegistered({
+            nome,
+            cargo,
+            imagem,
+            time,
+        });
     };
     return (
         <section className="formulario">

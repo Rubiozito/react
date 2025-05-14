@@ -8,6 +8,7 @@ const SuspendedList = (props) => {
                 required={props.isRequired}
                 onChange={(event) => props.onChanged(event.target.value)}
                 value={props.value}>
+                <option value="">Selecione um time</option>
                 {props.itens.map((item) => (
                     <option key={item}>{item}</option>
                 ))}
