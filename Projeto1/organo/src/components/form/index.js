@@ -5,8 +5,6 @@ import TextField from "../TextField";
 import "./Form.css";
 
 const Formulario = (props) => {
-    const times = ["Diretoria", "Infra", "Back-end", "Front-end", "UX/UI", "Business"];
-
     const [nome, setNome] = useState("");
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
@@ -47,7 +45,7 @@ const Formulario = (props) => {
                     onChanged={(value) => setImagem(value)}
                 />
                 <SuspendedList
-                    itens={times}
+                    itens={props.team}
                     label="Time"
                     isRequired={true}
                     value={time}

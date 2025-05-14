@@ -11,3 +11,8 @@
     padding: 36px 64px;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);
 }
+
+.formulario form .botao {
+    display: block;
+    margin: 32px auto;
+}
