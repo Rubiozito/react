@@ -9,7 +9,13 @@ const Team = (props) => {
             <h3 style={{borderColor: props.primaryColor}}>{props.nome}</h3>
             <div className="members">
                 {props.members.map((member) => (
-                    <Member nome={member.nome} cargo={member.cargo} imagem={member.imagem} />
+                    <Member
+                        key={member.nome}
+                        nome={member.nome}
+                        cargo={member.cargo}
+                        imagem={member.imagem}
+                        backColor={props.primaryColor}
+                    />
                 ))}
             </div>
         </section>

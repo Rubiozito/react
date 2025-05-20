@@ -41,7 +41,6 @@ function App() {
     const [members, setMembers] = useState([]);
 
     const onNewMember = (member) => {
-        console.log(member);
         setMembers([...members, member]);
     };
 
