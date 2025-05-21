@@ -1,0 +1,17 @@
+.search-bar {
+    width: 100%;
+    color: var(--cinza-claro);
+    padding: 0.5em 1em 0.5em 4em;
+    height: 49px;
+    font-family: var(--fonte);
+    font-size: 22px;
+    background: var(--cinza-escuro) url("./assets/search.svg") no-repeat 32px;
+
+    /* Remover linha clara e estilo padrão */
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+}
